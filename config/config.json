@@ -1,0 +1,23 @@
+{
+  "authorization": {
+    "jwt": {
+      "signOptions": {
+        "expiresIn": "1h"
+      },
+      "secret": "ufXiVZUinyrtiR38JssTwUeFEJvLUXIZ1KUwjFn5"
+    },
+    "passwordSecret": "lk32gOUoeYUTGraLs27ejF5pfDtxUyc2LMtdBYuxvVbmR3bpL9lKU3laEuRvTMseHlmKDrZIODMOVuqSxF8lDYQOUaLZrUpBJ6jS"
+  },
+  "knex": {
+    "client": "postgresql",
+    "connection": {
+      "database": "todo_list",
+      "user": "app",
+      "password": "test1234"
+    },
+    "pool": {
+      "min": 2,
+      "max": 10
+    }
+  }
+}
