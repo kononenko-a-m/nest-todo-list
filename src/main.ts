@@ -8,6 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const port = process.env.PORT ? parseInt(process.env.PORT) : 8888;
 
+  app.enableCors();
   app.setGlobalPrefix('v1');
 
   const config = new DocumentBuilder()
